@@ -4,10 +4,10 @@ export function StepControls({ currentStep, onPreviousStep, onNextStep }) {
     return (
         <ButtonGroup>
           <Button onClick={onPreviousStep} disabled={currentStep === 1}>
-            Étape précédente
+            Go to the previous step
           </Button>
           <Button onClick={onNextStep}>
-            Valider et passer à l'étape suivante
+            Validate and go to the next step
           </Button>
         </ButtonGroup>
     );

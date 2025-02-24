@@ -49,7 +49,7 @@ export default function Home() {
                     scale: metadata.view_params.scale.default,
                     road_condition: metadata.params_ranges.controls.params.road_condition.default,
                     vehicle_type: metadata.params_ranges.controls.params.vehicle_type.default,
-                    throttle: 50,
+                    throttle: 100,
                     brake: 0,
                     handbrake: 0
                 };
@@ -181,7 +181,7 @@ export default function Home() {
                     initial_speed: lastPosition.speed,
                     slip_angle: lastPosition.slip_angle,
                     yaw_rate: lastPosition.yaw_rate,
-                    steering: 0 // Réinitialiser le steering pour la nouvelle étape
+                    steering: 0 // Reset steering for new step
                 },
                 positions: []
             }
@@ -200,8 +200,8 @@ export default function Home() {
 
     return (
         <Container>
-            <Header>Simulateur de Conduite</Header>
-            <StepIndicator>Étape {currentStep}</StepIndicator>
+            <Header>Turned Based Driving Simulator</Header>
+            <StepIndicator>Turn #{currentStep}</StepIndicator>
 
             <ControlPanel
                 metadata={metadata}
@@ -218,7 +218,7 @@ export default function Home() {
                 scale={steps[currentStep - 1].params.scale}
             />
 
-            {loading && <Status>Chargement de la trajectoire...</Status>}
+            {loading && <Status>Loading trajectory...</Status>}
             {error && <Status error>{error}</Status>}
         </Container>
     );

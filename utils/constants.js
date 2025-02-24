@@ -1,5 +1,5 @@
 // Chemin du fichier de métadonnées
-export const METADATA_PATH = '/turn-based-driving-game/simulation_metadata.json';
+export const METADATA_PATH = '/simulation_metadata.json';
 
 // Tailles des différents types de données
 export const TYPE_SIZES = {
@@ -21,20 +21,17 @@ export const TYPE_ARRAYS = {
 
 // Conditions de route disponibles avec leurs labels
 export const ROAD_CONDITIONS = {
-    dirt: "Terre",
-    snow: "Neige",
-    asphalt: "Asphalte",
-    wet_asphalt: "Asphalte mouillé"
+    dirt: "Dirt",
+    snow: "Snow",
+    asphalt: "Asphalt",
+    wet_asphalt: "Wet asphalt"
 };
 
 // Types de véhicules disponibles avec leurs labels
 export const VEHICLE_TYPES = {
-    muscle_car: "Muscle Car",
-    roadster: "Roadster",
-    front_wheel_drive: "Traction avant",
-    four_wheel_drive: "4 roues motrices",
-    mid_engine_rear_drive: "Moteur central propulsion",
-    front_engine_rear_drive: "Moteur avant propulsion"
+    front_wheel_drive: "FWD",
+    four_wheel_drive: "4WD",
+    front_engine_rear_drive: "RWD"
 };
 
 // Valeurs par défaut pour les contrôles combinés
@@ -61,23 +58,23 @@ export const CONTROL_THRESHOLDS = {
 
 // Configuration de l'API
 export const API_CONFIG = {
-    baseUrl: 'http://localhost:8000',
+    baseUrl: 'https://www.dvf.ovh',
     trajectoryLength: 100
 };
 
 // Messages d'erreur
 export const ERROR_MESSAGES = {
     METADATA_LOAD: 'Failed to load metadata',
-    TRAJECTORY_LOAD: 'Impossible de charger la trajectoire.',
+    TRAJECTORY_LOAD: 'Unable to load trajectory.',
     API_FETCH: 'Failed to fetch from API'
 };
 
 // Labels des contrôles combinés
 export const COMBINED_CONTROL_LABELS = {
-    handbrake: 'Frein à main',
-    brake: 'Frein',
-    neutral: 'Neutre',
-    throttle: 'Accélérateur'
+    handbrake: 'Handbrake',
+    brake: 'Brake',
+    neutral: 'Neutral',
+    throttle: 'Throttle'
 };
 
 // Configuration des paramètres de vue

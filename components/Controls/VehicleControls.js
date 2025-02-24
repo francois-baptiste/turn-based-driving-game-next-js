@@ -4,7 +4,7 @@ import { ROAD_CONDITIONS, VEHICLE_TYPES } from '../../utils/constants';
 export function VehicleControls({ params, onParamChange }) {
     return (
         <ControlGroup>
-            <Label>Type de route</Label>
+            <Label>Surface type</Label>
             <Select
                 value={params.road_condition}
                 onChange={(e) => onParamChange('road_condition', e.target.value)}
@@ -14,7 +14,7 @@ export function VehicleControls({ params, onParamChange }) {
                 ))}
             </Select>
 
-            <Label>Type de véhicule</Label>
+            <Label>Transmission layout</Label>
             <Select
                 value={params.vehicle_type}
                 onChange={(e) => onParamChange('vehicle_type', e.target.value)}

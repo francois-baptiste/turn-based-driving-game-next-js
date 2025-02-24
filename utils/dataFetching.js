@@ -107,7 +107,7 @@ export async function loadTrajectoryData(params, metadata) {
 export async function fetchTrajectoryFromAPI(params) {
     try {
         const response = await fetch(
-            `http://localhost:8000/compute_trajectory?params=${JSON.stringify(params)}`
+            `https://www.dvf.ovh/compute_trajectory?params=${JSON.stringify(params)}`
         );
 
         if (!response.ok) throw new Error('Failed to fetch from API');

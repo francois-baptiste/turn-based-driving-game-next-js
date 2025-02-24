@@ -9,10 +9,10 @@ export function CombinedSlider({ value, onChange }) {
     return (
         <CombinedSliderContainer>
             <CombinedSliderLabel>
-                <span>Frein à main</span>
-                <span>Frein</span>
-                <span>Neutre</span>
-                <span>Accélérateur</span>
+                <span>Handbrake</span>
+                <span>Brake</span>
+                <span>Neutral</span>
+                <span>Throttle</span>
             </CombinedSliderLabel>
             <Slider
                 type="range"

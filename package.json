@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "generate-proto": "npx pbjs --es6 lib/proto/trajectory.js proto/trajectory.proto && npx pbts -o lib/proto/trajectory.d.ts lib/proto/trajectory.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
